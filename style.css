@@ -299,6 +299,11 @@ nav .fa {
     background-color: #0a7a87;
 }
 
+/* mobile 3 line */
+.mobile {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     .main-text h1 {
         font-size: 30px;
@@ -360,6 +365,15 @@ nav .fa {
         margin-top: 2rem;
     }
 
+    
+    .mobile {
+        display: inline;
+    }
+
+    .main-text h1 {
+        font-size: 1.5em;
+    }
+
 }
 
 /* phones */
@@ -371,4 +385,5 @@ nav .fa {
     .main-text p{
         font-size: 1em;
     }
+
 }
