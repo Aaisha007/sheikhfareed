@@ -166,7 +166,7 @@ nav .fa {
     align-items: center;
     justify-content: space-between;
     /* gap: 2rem; */
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 2rem;
     max-width: 1200px;
     margin: auto;
@@ -360,4 +360,15 @@ nav .fa {
         margin-top: 2rem;
     }
 
+}
+
+/* phones */
+@media (max-width: 418px) {
+    .main-text h1 {
+        font-size: 1.5em;
+    }
+
+    .main-text p{
+        font-size: 1em;
+    }
 }
