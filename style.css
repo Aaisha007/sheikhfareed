@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        scroll-behavior:smooth;
+}
+
+body {
+    background-color: #edeeee;
+}
+
+
+/* main page */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-color: #edeeee;
+}
+
+nav {
+    display: flex;
+    padding: 2% 7% 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeeee;
+    box-shadow: 0 2px 5px rgba(197, 144, 40, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+nav.no-shadow {
+    box-shadow: none;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #c59028;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+nav button {
+    background-color: #08626f;
+    color: #c59028;
+    border: none;
+    padding: 12px 15px 12px 15px;
+    text-align: center;
+    margin-left: 2%;
+    font-size: 70%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: #c59028;
+    margin-top: 2%;
+}
+
+nav button i {
+    margin-right: 4px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #c59028;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.main-text {
+    width: 50%;
+    color: #c59028;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 2%;
+}
+
+.main-text h1 {
+    /* font-size: 35px; */
+    line-height: 1.3;
+    text-align: center;
+    font-size: 2em;
+}
+
+.main-text p {
+    margin: 10px 0 15px;
+    font-weight: 200;
+    color: black;
+    text-align: center;
+}
+
+.main-text button {
+    color: #c59028;
+    border: #08626f solid;
+    padding: 12px 15px 12px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #08626f;
+    border-radius: 10px;
+}
+
+.main-text img {
+    width: 30%;
+    margin-top: 5%;
+    border:#08626f solid;
+    border-radius: 50%;
+}
+
+button:hover {
+    background: none;
+    border: #08626f solid 0.5px;
+    
+}
+
+nav .fa {
+    display: none;
+}
+
+/* dark mode */
+/* #btn-text {
+    background-color: #fff;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+} */
+
+/* About page */
+
+.about {
+    min-height: 100vh;
+    background-color: #edeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about-description {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 5%
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.about-image img {
+    max-width: 50%;
+    /* height: auto; */
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+/* recitations page */
+.recitation {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.recitation h2 {
+    margin-bottom: 10px;
+}
+
+.recitation p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.recitation-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.recitation-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    /* margin: 0 auto; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.recitation-card audio {
+    width: 100%;
+    margin-top: 10px 0;
+}
+
+.recitation-card h4 {
+    margin-bottom: 10px;
+    color: #08626f;
+    font-size: 1.1em;
+}
+
+.audio-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.audio-row audio {
+    flex: 1;
+    width: 100%;
+}
+
+.download-icon {
+    font-size: 1.2em;
+    color: #08626f;
+    text-decoration: none;
+}
+
+.download-icon:hover {
+    color: #0a7a87 ;
+}
+
+/* .audio controls {
+    margin-top: 5px;
+} */
+
+/* scroll to top button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 100;
+    font-size: 18px;
+    background-color: #08626f;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #0a7a87;
+}
+
+@media screen and (max-width: 700px) {
+    .main-text h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        height: 100vh;
+        background-color: #08626f;
+        width: 200px;
+        top: 0;
+        left: 0;
+        text-align: left;
+        z-index: 2;
+        display: none;
+    }
+
+    nav .fa {
+        display: block;
+        color: #c59028;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #bar:hover {
+        scale: 1.1;
+    }
+
+    #close:hover {
+        scale: 1.1;
+        margin-left: 25%;
+    }
+
+
+    .nav-links ul {
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 46%;
+    }
+
+    #close {
+        margin-left: 20%;
+        margin-top: 12%;
+    }
+
+    /* main text */
+    .main-text img {
+        width: 50%;
+    }
+
+    /*About page */
+    .about-image img {
+        margin-top: 2rem;
+    }
+
+}

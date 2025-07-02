@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recitations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <i class="fa fa-bars" onclick="show()" id="bar"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hide()" id="close"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="#recitation">RECITATIONS</a></li>
+                <li><a href="">Q & A</a></li>
+                <li><a href="">LECTURES</a></li>
+                <!-- <li>    <button onclick="button()" id="btn-text">Change</button></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="recitation" id="recitation">
+        <h2>Qur'an Recitations</h2>
+        <p>Listen to the heartfelt recitations. You may Listen
+            online or download to keep benefiting anytime.
+        </p>
+
+        <input type="text" id="searchInput" placeholder="Search Surah..." onkeyup="searchRecitations()" >
+        <!-- <div class="playlist-player">
+            <button onclick="playPlaylist()"><i class="fa-solid fa-play"></i>Play All recitations</button>
+            <audio id="mainPlayer" controls></audio>
+        </div> -->
+
+        <div class="recitation-grid playlist-player">
+            <div class="recitation-card">
+                <h4>Play All!</h4>
+                <div class="audio-row">
+                <audio id="mainPlayer" controls>
+                    <source src="quran recitations/01 - al-fathiha.mp3" type="audio/mp3">
+                </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- surah 1 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al-Fathihah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/01 - al-fathiha.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/01 - al-fathiha.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 2 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al-Naba</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/02 - al-naba.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/02 - al-naba.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 3 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah An- Naziat</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/03 - an-naziat.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/03 - an-naziat.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 4 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Abasa</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/04 - Abasa.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/04 - Abasa.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 5 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Takweer</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/05 - Al-takweer.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/05 - Al-takweer.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 6 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Infitaar</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/06 - Al-Infitaar.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/06 - Al-Infitaar.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 7 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Al - Mutaffifeen</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/07 - Al-mutaffifeen.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/07 - Al-mutaffifeen.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 8 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Inshiqaaq</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/08 - Al-Inshiqaaq.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/08 - Al-Inshiqaaq.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 9 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Burooj</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/09 - Al-Burooj.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/09 - Al-Burooj.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 10 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Thoriq</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/10 - Al-Thoriq.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/10 - Al-Thoriq.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 11 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Aula</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/11 - Al-Aula.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/11 - Al-Aula.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 12 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Qhaashiyah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/12 - Al-Gaashiyah.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/12 - Al-Gaashiyah.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 13 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Fajr</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/13 - Al-Fajr.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/13 - Al-Fajr.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 14 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Baladh</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/14 - Al-Baladh.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/14 - Al-Baladh.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 15 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Ash- Shams</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/15 - Ash-Shams.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/15 - Ash-Shams.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 16 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Lail</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/16 - Al-Lail.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/16 - Al-Lail.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 17 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Ad- Dhuha</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/17 - Ad-dluha.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/17 - Ad-dluha.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 18 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Ash - Sharh</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/18 - Ash-Sharh.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/18 - Ash-Sharh.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 19 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah At - Thin</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/19 - At-Thin.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/19 - At-Thin.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 20 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Alaq</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/20 - Al-Alaq.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/20 - Al-Alaq.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 21 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Qadhr</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/21 - Al-Qadhr.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/21 - Al-Qadhr.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 22 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Bayyinah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/22 - Al-Bayyina.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/22 - Al-Bayyina.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 23 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Az - Zalzalah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/23 - Az-Zalzalah.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/23 - Az-Zalzalah.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 24 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Aadhiyaath</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/24 - Al-Adhiyaath.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/24 - Al-Adhiyaath.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 25 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Qaariah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/25 - Al-Qariah.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/25 - Al-Qariah.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 26 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Asr</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/26 - Al-Asr.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/26 - Al-Asr.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 27 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Humazah</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/27 - Al-Humaza.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/27 - Al-Humaza.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 28 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Feel</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/28 - Al-Feel.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/28 - Al-Feel.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 29 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Quraish</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/29 - Quraish.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/29 - Quraish.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 30 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah At - Takaasur</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/30 - At-Takaasur.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/30 - At-Takaasur.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 31 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Maa'un</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/31 -Al-Maaoon.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/31 -Al-Maaoon.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 32 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Kausar</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/32 - Al-Kausar.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/32 - Al-Kausar.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 33 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Kaafiroon</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/33 - Al-Kaafiroon.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/33 - Al-Kaafiroon.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 34 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah An - Nasr</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/34 - An-nasr.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/34 - An-nasr.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 35 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Masadh</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/35 - Al-Masadh.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/35 - Al-Masadh.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 36 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah Al - Ikhlas</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/36 -Al-Ikhlas(thauheedh).mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/36 -Al-Ikhlas(thauheedh).mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 37 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah al - Falaq</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/37 - Al-Falaq.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/37 - Al-Falaq.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- surah 38 -->
+        <div class="recitation-grid">
+            <div class="recitation-card">
+                <h4>Surah An - Nas</h4>
+                <div class="audio-row">
+                <audio controls>
+                    <source src="quran recitations/38 - An-Nas.mp3" type="audio/mp3">
+                </audio>
+                <a href="quran recitations/38 - An-Nas.mp3" download class="download-icon" title="download"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
